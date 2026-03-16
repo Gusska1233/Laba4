@@ -1,4 +1,4 @@
-<img width="700" height="297" alt="image" src="https://github.com/user-attachments/assets/55af4f92-e5e1-4ce9-9139-fc8c23e8f56c" /># Палехов Виктор БАС-2024-1 Лабораторная №4
+# Палехов Виктор БАС-2024-1 Лабораторная №4
 
 # Задание 1
 
