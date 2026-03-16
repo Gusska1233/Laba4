@@ -5,12 +5,16 @@ type 't btree =
     Node of 't * 't btree * 't btree
     | Nil
 
-let rec insert direction x =
+let rec insert direction value =
     match direction with
-    | Nil -> Node(x, Nil, Nil)
+    | Nil -> Node(value, Nil, Nil)
     | Node(z, L, R) -> 
-        if x < z then Node(z, insert L x, R)
-        else Node(z, L, insert R x)
+        if value < z then 
+            Node(z, insert L value, R)
+        elif value > z then
+            Node(z, L, insert R value)
+        else
+            Node(z, L, R)
 
 let rec checkDigit ()=  
    let c = Console.ReadLine()
